@@ -1,3 +1,349 @@
-body {
-    background-color: red;
+/*  ======== RACINE ======== */
+
+:root {
+    font-size: 62.5%;
+    --noir: black;
+    --secondary: rgb(245, 245, 245);
+    --troisieme: #1E6FEB;
+    --blanc: white;
+
+    --font-title: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
+
+
+
+/*  ======== RESET ======== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*  ======== CSS ======== */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    padding: 1.5rem;
+    border-bottom: 1px solid rgb(195, 195, 195);
+
+    .logo {
+
+        a {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--noir);
+        }
+
+        img {
+            height: 1.5rem;
+            margin-right: 1rem;
+        }
+    }
+
+
+
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+        transition: right 1s ease;
+        z-index: 999;
+        padding: 5rem 1.5rem 2rem;
+        transform: translateX(100%);
+
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    #menu-toggle:checked~.nav-menu {
+        right: 0;
+        transform: translateX(0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+
+        a {
+            font-size: 2rem;
+        }
+
+    }
+
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 1rem;
+    border-radius: 50px;
+
+}
+
+
+.btn-primary {
+    background-color: var(--troisieme);
+    border: 1px solid rgb(2, 2, 97);
+    color: var(--blanc);
+
+}
+
+.btn-secondary {
+    background-color: var(--blanc);
+    border: 1px solid rgb(237, 237, 237);
+
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--noir);
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+
+
+main {
+    background-color: #F0F1F5;
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--blanc);
+    border-radius: 1rem;
+    margin: 1rem auto;
+    overflow: hidden;
+    max-width: 300px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card img {
+    max-width: 300px;
+    width: 100%; 
+}
+
+.card nav {
+    margin: 2rem 1rem 0;
+
+
+}
+
+.card nav a {
+    border: 1px solid rgb(237, 237, 237);
+    padding: 0.5rem;
+    background-color: #E5EFFF;
+    border-radius: 20px;
+
+}
+
+.card h1 {
+    padding: 1rem;
+    font-weight: 900;
+}
+
+.card p {
+    font-size: 1.5rem;
+    color: grey;
+    padding: 0.3rem 1rem;
+    line-height: 1.4;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1rem 2rem;
+}
+
+.card > p:nth-child(5) {
+    font-size: 1rem; 
+    padding: 0 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.cards h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.title {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+   
+}
+
+.cards .card h3 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cards .card p {
+    padding-bottom: 1rem;
+}
+
+.cards .card a {
+    background-color: #E5EFFF;
+    margin: 1rem 0 0 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 80px;
+    text-align: center;
+    font-weight: 100;
+    border: 1px solid #C6CDD7;
+}
+
+.device {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card1 { 
+    border: 1px solid #E5E7EA;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.card1 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card1 span {
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    
+}
+
+.sidebar {
+    display: grid;
+    grid-column: 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    
+}
+
+.sidebar section {
+    border: 1px solid #E5E7EA;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sidebar section h3 {
+    font-size: 1.5rem;
+}
+
+.sidebar section p {
+    font-size: 1.5rem;
+}
+
+.sidebar section .btn-primary {
+    width: 95px;
+}
+
+.sidebar section .btn-secondary {
+    width: 160px;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 1rem 3rem 1rem;
+    border-top: 2px solid grey;
+    
+}
+
+footer a, p {
+    font-weight: 100;
+    font-size: 1.4rem;
+    color: gray;
+}
+
+footer .tab {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+footer span {
+    height: 1px;
+    background-color: #C6CDD7;
+    width: 100%;
+}
+
+
+/* img {
+    width: 50px;
+} */
+
+
+/*  ======== RESPONSIVE ======== */
+
+
+
+/* Sur tablette (à partir de 768px), 1ère media query */
+@media (min-width: 768px) {}
+
+
+
+/* Sur ordinateur (à partir de 1024px), 2ème media query */
+@media (min-width: 1024px) {}

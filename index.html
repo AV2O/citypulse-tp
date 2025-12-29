@@ -10,85 +10,103 @@
 
 <body>
     <header>
-        <div>
+        <div class="logo">
             <a href="/" class="brand" aria-label="Accueil CityPulse">
-            <img src="img/logo.svg" alt="logo CityPulse">
-            <span class="brand-name">CityPulse</span>
+                <img src="img/logo.svg" alt="logo CityPulse">
+                <span class="brand-name">CityPulse</span>
             </a>
         </div>
-        <a href="contact.html" class="btn-primary">Proposer</a>
-        <button class="btn-secondary" aria-label="menu principal" aria-controls="nav-menu">Menu</button>
-        <nav id="nav-menu" class="nav-menu">
-            <a href="index.html">Accueil</a>
-            <a href="agenda.html">Agenda</a>
-            <a href="articles.html">Articles</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div>
+            <a href="contact.html" class="btn-primary">Proposer</a>
+
+            <input type="checkbox" id="menu-toggle" class="checkbox">
+            <label for="menu-toggle" class="btn-secondary">Menu</label>
+
+            <nav class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="agenda.html">Agenda</a>
+                <a href="articles.html">Articles</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <span></span>
-        <article>
-            <img src="img/placeholder-16x9.svg" alt=""><button>Vie locale</button><button>Mise à jour</button>
+        <article class="card">
+            <img src="img/placeholder-16x9.svg" alt="">
+            <nav>
+                <a href="#">Vie locale</a>
+                <a href="#">Mise à jour</a>
+            </nav>
             <h1>Budget participatif : 5 projets concrets retenus pour améliorer le quotidien</h1>
-            <p> 24 décembre 2025 • Par Rédaction CityPulse</p>
+            <p> 24 décembre 2025 • Par Rédaction CityPulse
+            <p>
             <p>Mobilité douce, Patrimoine, Sport, enfance... Les habitants ont voté : découvrez les idées qui seront
                 financées en 2026 et le calendrier des réalisations.</p>
-            <button class="btn-primary" aria-label="Lire l'article">Lire l'article</button>
-            <button class="btn-secondary" aria-label="Voir tous les articles">Voir tous les articles</button>
+            <div class="btn">
+                <a href="article.html" class="btn-primary" aria-label="Lire l'article">Lire l'article</a>
+                <a href="articles.html" class="btn-secondary" aria-label="Voir tous les articles">Voir tous les
+                    articles</a>
+            </div>
         </article>
-        <section>
-            <h2>A la une</h2>
-            <span>Voir la liste</span>
-            <article>
+        <section class="cards">
+            <div class="title">
+                <h2>A la une</h2>
+                <a href="articles.html">Voir la liste</a>
+            </div>
+            <article class="card">
                 <img src="img/placeholder-16x9.svg" alt="Visuel d'illustration">
-                <p>Economie</p>
+                <a href="articles.html">Economie</a>
                 <h3>Commerces : les horaires spéciaux des fêtes et les services de proximité</h3>
                 <p>Ouvertures, fermetures, permanences : un récapitulatif clair pour organiser vos courses.</p>
                 <p>23 décembre 2025 • 3 min</p>
             </article>
-            <article>
+            <article class="card">
                 <img src="img/placeholder-16x9.svg" alt="Visuel d'illustration">
-                <p>Culture</p>
+                <a href="articles.html">Culture</a>
                 <h3>Exposition : une sélection d'œuvres locales à découvrir en famille</h3>
                 <p>Un parcours accessible et chaleureux, avec des temps de méditation et une visite courte.</p>
                 <p>22 décembre 2025 • 4 min</p>
             </article>
-            <article>
+            <article class="card">
                 <img src="img/placeholder-16x9.svg" alt="Visuel d'illustration">
-                <p>Transports</p>
+                <a href="articles.html">Transport</a>
                 <h3>Circulation : plan de stationnement et conseils pour éviter les bouchons</h3>
                 <p>Les rues à privilégier, les zones à éviter, et des alternatives simples pour se déplacer.</p>
                 <p>21 décembre 2025 • 2 min</p>
             </article>
         </section>
-        <section>
-            <h2>Dernières infos</h2>
-            <span>Tout afficher</span>
-            <div>
-                <p>Collecte : modification exceptionnelle des tournées cette semaine </p><span>24/12</span>
+        <section class="device">
+            <div class="title">
+                <h2>Dernières infos</h2>
+                <a href="articles.html">Tout afficher</a>
             </div>
-            <div>
-                <p>Écoles : informations pratiques pour la reprise de janvier </p><span>23/12</span>
-            </div>
-            <div>
+            <article class="card1">
+                <p>Collecte : modification exceptionnelle des tournées cette semaine </p>
+                <span>24/12</span>
+            </article>
+            <article class="card1">
+                <p>Écoles : informations pratiques pour la reprise de janvier </p>
+                <span>23/12</span>
+            </article>
+            <article class="card1">
                 <p>Solidarité : points de collectes et besoins prioritaires </p><span>22/12</span>
-            </div>
-            <div>
+            </article>
+            <article class="card1">
                 <p>Sport : inscriptions ouvertes pour les ateliers de remise en forme </p><span>20/12</span>
-            </div>
+            </article>
         </section>
         <aside class="sidebar">
             <section>
                 <h3>Info du jour</h3>
                 <p><span>Ouverture :</span> permanence citoyenne execptionnelle vendredi matin.</p>
                 <p>Conseil : priviliégiez le contact via le formulaire si vous avez un document à transmettre</p>
-                <a href="#">Contacter la rédaction</a>
+                <a class="btn-secondary" href="contact.html">Contacter la rédaction</a>
             </section>
             <section>
                 <h3>Météo & circulation</h3>
-                <p>Temps : ciel couvert, risque de pluie en fin
+                <p><span>Temps :</span> ciel couvert, risque de pluie en fin
                     d'après-midi.</p>
-                <p>Trafic : circulation dense autour du centre
+                <p><span>Trafic :</span> circulation dense autour du centre
                     entre 16h et 19h.</p>
                 <p>Ces informations sont indicatives (contenu statique
                     du TP).
@@ -98,27 +116,29 @@
                 <h3>Recevoir la newsletter</h3>
                 <p>Une fois par semaine : les infos utiles, l'agenda
                     et les bonnes initiatives.</p>
-                <button class="btn-primary" aria-label="S'inscrire à la newsletter">
+                <a href="" class="btn-primary" aria-label="S'inscrire à la newsletter">
                     Je m'inscris
-                </button>
+                </a>
             </section>
         </aside>
     </main>
     <footer>
-        <div>
-            <nav>
-                <a href="index.html">CityPulse</a>
+        <div class="tab">
+            <div>
+                <h4>CityPulse</h4>
                 <p>Le mini local qui met en avant les infos utiles, les initiatives et l'agenda du territoire.</p>
-            </nav>
+            </div>
             <nav>
+                <h4>Rubrique</h4>
                 <a href="index.html">Accueil</a>
                 <a href="articles.html">Articles</a>
                 <a href="agenda.html">Agenda</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <nav>
+                <h4>Rédaction</h4>
                 <a href="contact.html">Porposer une info</a>
-                <a href="#">Signaler une erreur</a>
+                <a href="contact.html">Signaler une erreur</a>
                 <a href="#">Charte de publication</a>
             </nav>
         </div>

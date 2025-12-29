@@ -10,20 +10,25 @@
 
 <body>
    <header>
-        <div>
+        <div class="logo">
             <a href="/" class="brand" aria-label="Accueil CityPulse">
-            <img src="img/logo.svg" alt="logo CityPulse">
-            <span class="brand-name">CityPulse</span>
+                <img src="img/logo.svg" alt="logo CityPulse">
+                <span class="brand-name">CityPulse</span>
             </a>
         </div>
-        <a href="contact.html" class="btn-primary">Proposer</a>
-        <button class="btn-secondary" aria-label="menu principal" aria-controls="nav-menu">Menu</button>
-        <nav id="nav-menu" class="nav-menu">
-            <a href="index.html">Accueil</a>
-            <a href="agenda.html">Agenda</a>
-            <a href="articles.html">Articles</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div>
+            <a href="contact.html" class="btn-primary">Proposer</a>
+
+            <input type="checkbox" id="menu-toggle" class="checkbox">
+            <label for="menu-toggle" class="btn-secondary">Menu</label>
+
+            <nav class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="agenda.html">Agenda</a>
+                <a href="articles.html">Articles</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
     <main>
         <h1>Agenda</h1>
