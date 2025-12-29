@@ -27,6 +27,8 @@
 
 /*  ======== CSS ======== */
 
+/* ----- INDEX ----- */
+
 header {
     display: flex;
     flex-direction: row;
@@ -94,7 +96,8 @@ header {
 .btn-secondary {
     padding: 1rem;
     border-radius: 50px;
-
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 
@@ -102,51 +105,42 @@ header {
     background-color: var(--troisieme);
     border: 1px solid rgb(2, 2, 97);
     color: var(--blanc);
-
 }
 
 .btn-secondary {
     background-color: var(--blanc);
     border: 1px solid rgb(237, 237, 237);
-
-
 }
 
 a {
     text-decoration: none;
     color: var(--noir);
-    font-size: 1.4rem;
-    font-weight: bold;
-
+    ;
 }
 
 
 main {
-    background-color: #F0F1F5;
-    padding: 1rem;
+    background-color: #F1F2F6;
+    padding: 1.5rem;
 }
 
 .card {
     background-color: var(--blanc);
-    border-radius: 1rem;
-    margin: 1rem auto;
+    border-radius: 1.5rem;
     overflow: hidden;
-    max-width: 300px;
-    height: 470px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    border: 2px solid rgb(237, 237, 237);
 }
 
-
 .card img {
-    max-width: 300px;
-    width: 100%; 
+    max-width: 100%;   
 }
 
 .card nav {
     margin: 2rem 1rem 0;
-
-
 }
 
 .card nav a {
@@ -154,19 +148,22 @@ main {
     padding: 0.5rem;
     background-color: #E5EFFF;
     border-radius: 20px;
-
 }
 
-.card h1 {
-    padding: 1rem;
+h1 {
+    padding: 1rem 0;
     font-weight: 900;
+    font-size: 3rem;
 }
 
+p {
+    padding: 1rem 0;
+}
 .card p {
     font-size: 1.5rem;
     color: grey;
-    padding: 0.3rem 1rem;
     line-height: 1.4;
+    padding: 0.3rem 1rem;
 }
 
 .btn {
@@ -188,24 +185,25 @@ main {
     gap: 2rem;
 }
 
-.cards h2 {
+h2 {
     font-size: 2rem;
     font-weight: 900;
+    padding: 0 1rem ;
+    
 }
 
 .title {
-
-    display: flex;
+     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 2rem 0;
 }
 
 .cards .card{
     display: flex;
     flex-direction: column;
-    height: 350px;
-   
+    padding-bottom: 1rem;
 }
 
 .cards .card h3 {
@@ -214,18 +212,15 @@ main {
     font-weight: bold;
 }
 
-.cards .card p {
-    padding-bottom: 1rem;
-}
-
 .cards .card a {
     background-color: #E5EFFF;
     margin: 1rem 0 0 1rem;
-    padding: 0.5rem;
     border-radius: 20px;
-    width: 80px;
+    width: 60px;
+    padding: 0.3rem;
     text-align: center;
-    font-weight: 100;
+    font-weight: 500;
+    font-size: 1.2rem;
     border: 1px solid #C6CDD7;
 }
 
@@ -236,13 +231,12 @@ main {
 }
 
 .card1 { 
-    border: 1px solid #E5E7EA;
+    border: 2px solid #E5E7EA;
     border-radius: 10px;
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
 .card1 p {
@@ -261,17 +255,16 @@ main {
     grid-column: 1fr;
     gap: 1rem;
     margin-bottom: 3rem;
-    
 }
 
 .sidebar section {
-    border: 1px solid #E5E7EA;
+    border: 2px solid #E5E7EA;
     border-radius: 10px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
+    margin-top: 2rem;
 }
 
 .sidebar section h3 {
@@ -283,22 +276,20 @@ main {
 }
 
 .sidebar section .btn-primary {
-    width: 95px;
+    width: 190px;
+    text-align: center;
 }
 
 .sidebar section .btn-secondary {
     width: 160px;
 }
 
-
-
 footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 1rem 1rem 3rem 1rem;
-    border-top: 2px solid grey;
-    
+    border-top: 1px solid #E5E7EA;
 }
 
 footer a, p {
@@ -319,7 +310,7 @@ footer nav {
     gap: 1rem;
 }
 
-footer h4 {
+h4 {
     font-size: 1.5rem;
     margin: 1rem 0;
 }
@@ -331,9 +322,53 @@ footer span {
 }
 
 
-/* img {
-    width: 50px;
-} */
+/* ----- AGENDA ----- */
+
+form {
+    border: 2px solid #E5E7EA;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+form select, #search{
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    padding: 0.3rem;
+    margin: 1rem 0;
+    background-color: var(--secondary);
+    border: 1px solid gray;
+}
+
+form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: gray;
+
+}
+
+.time-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+    
+}
+
+.time-btn {
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: white;
+    border-color: #E5E7EA;
+    color: grey;font-weight: bold;
+}
 
 
 /*  ======== RESPONSIVE ======== */
