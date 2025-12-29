@@ -10,20 +10,48 @@
 
 <body>
     <header>
-        <a href="/" class="brand" aria-label="Accueil Trafalgar">
+        <div>
+            <a href="/" class="brand" aria-label="Accueil CityPulse">
             <img src="img/logo.svg" alt="logo CityPulse">
             <span class="brand-name">CityPulse</span>
-        </a>
-        <button class="btn-primary" aria-label="Proposer" href="contact.html">proposer</button>
-        <button class="btn-secondary" aria-label="menu">menu</button>
+            </a>
+        </div>
+        <a href="contact.html" class="btn-primary">Proposer</a>
+        <button class="btn-secondary" aria-label="menu principal" aria-controls="nav-menu">Menu</button>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="index.html">Accueil</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="articles.html">Articles</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
     <main>
         <h1>Articles</h1>
         <p>Retrouvez les dernières infos, classées par
             thématique. Les filtres sont présentés à titre
             visuel (TP sans JavaScript).</p>
-        <form action="">
+        <form>
+            <label for="search">Rechercher</label>
+            <input type="text" id="search" placeholder="Ex: mobilité, culture, écoles...">
 
+            <label for="trier">Trier :</label>
+            <select name="trier" id="trier">
+                <option value="Les plus recent">Les plus recent</option>
+                <option value="Les plus lus">Les plus lus</option>
+                <option value="Temps de lecture">Temps de lecture</option>
+            </select>
+            <p>La recherche n'est pas fontionnelle (présentation uniquement)</p>
+            <div>
+                <p>Thématiques :</p>
+                <nav>
+                <a href="#">Vie locale</a>
+                <a href="#">Culture</a>
+                <a href="#">Economie</a>
+                <a href="#">Education</a>
+                <a href="#">Transports</a>
+                <a href="#">Sport</a>
+                </nav>
+            </div>
         </form>
         <section>
             <article>

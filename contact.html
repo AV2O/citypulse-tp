@@ -10,12 +10,20 @@
 
 <body>
     <header>
-        <a href="/" class="brand" aria-label="Accueil Trafalgar">
-            <img src="img/logo.svg" alt="logo CityPulse">
-            <span class="brand-name">CityPulse</span>
-        </a>
-        <button class="btn-primary" aria-label="Proposer" href="contact.html">proposer</button>
-        <button class="btn-secondary" aria-label="menu">menu</button>
+        <div>
+            <a href="/" class="brand" aria-label="Accueil CityPulse">
+                <img src="img/logo.svg" alt="logo CityPulse">
+                <span class="brand-name">CityPulse</span>
+            </a>
+        </div>
+        <a href="contact.html" class="btn-primary">Proposer</a>
+        <button class="btn-secondary" aria-label="menu principal" aria-controls="nav-menu">Menu</button>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="index.html">Accueil</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="articles.html">Articles</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
     <main>
         <h1>Contatct / Proposer une info</h1>
@@ -24,8 +32,32 @@
             message. Les champs marqués "obligatoire"
             doivent être renseignés.
         </p>
-        <form action="">
+        <form>
+            <label for="name">Nom (facultatif)</label>
+            <input name="name" id="H" type="text" placeholder="Entrer votre Nom">
+            <legend>Indiquez le nom que nous pouvons citer si vous le souhaitez</legend>
 
+            <label for="mail">Email (obligatoire)</label>
+            <input name="mail" id="mail" type="text" placeholder="xyz@mail.fr" required>
+            <legend>Nous l'utilisons uniquement pour vous répondre</legend>
+
+            <label for="choix-message">Type de message (obligatoire)</label>
+            <select name="choix-message" id="choix-message" placeholder="Choisir...">
+                <option value="proposer un article">Proposer un article</option>
+                <option value="propser un evenement">Proposer un événement</option>
+                <option value="signaler">Signaler une erreur</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="textarea">Message (obligatoire)</label>
+            <textarea name="textarea" id="textarea" placeholder="Décrivez l'information : qui? quoi? quand? comment?" required></textarea>
+            <legend>Plus c'est précis, plus c'est simple à verifier et à publier</legend>
+
+            <input type="checkbox" name="collecte" id="collecte" required>
+            <label for="checkbox">J'accepte la collecte de mes données personnelles afin d'être recontacté au sujet de ce message</label>
+
+            <button type="submit">Envoyer</button>
+            <legend>Envoi non fonctionnel (TP sans back-end)</legend>
         </form>
         <aside>
             <article>

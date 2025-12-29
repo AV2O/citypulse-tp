@@ -10,12 +10,20 @@
 
 <body>
     <header>
-        <a href="/" class="brand" aria-label="Accueil Trafalgar">
+        <div>
+            <a href="/" class="brand" aria-label="Accueil CityPulse">
             <img src="img/logo.svg" alt="logo CityPulse">
             <span class="brand-name">CityPulse</span>
-        </a>
-        <button class="btn-primary" aria-label="Proposer" href="contact.html">proposer</button>
-        <button class="btn-secondary" aria-label="menu">menu</button>
+            </a>
+        </div>
+        <a href="contact.html" class="btn-primary">Proposer</a>
+        <button class="btn-secondary" aria-label="menu principal" aria-controls="nav-menu">Menu</button>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="index.html">Accueil</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="articles.html">Articles</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
     <main>
         <h1>Budget participatif : 5 projets concrets retenus pour améliorer le quotidien</h1>
