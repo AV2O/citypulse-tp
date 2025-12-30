@@ -55,26 +55,31 @@
             </select>
 
             <label for="textarea">Message (obligatoire)</label>
-            <textarea name="textarea" id="textarea" placeholder="Décrivez l'information : qui? quoi? quand? comment?" required></textarea>
+            <textarea name="textarea" id="textarea" placeholder="Décrivez l'information : qui? quoi? quand? comment?"
+                required></textarea>
             <legend>Plus c'est précis, plus c'est simple à verifier et à publier</legend>
 
-            <input type="checkbox" name="collecte" id="collecte" required>
-            <label for="checkbox">J'accepte la collecte de mes données personnelles afin d'être recontacté au sujet de ce message</label>
+            <div class="form-checkbox">
+                
+                <input type="checkbox" name="collecte" id="collecte" required>
+                <label for="collecte">J'accepte la collecte de mes données personnelles afin d'être recontacté au sujet
+                de ce message</label>
+            </div>
 
-            <button type="submit">Envoyer</button>
+            <button class="btn-primary" type="submit">Envoyer</button>
             <legend>Envoi non fonctionnel (TP sans back-end)</legend>
         </form>
-        <aside>
-            <article>
-                <h2>Coordonnées rédaction</h2>
+        <aside class="device">
+            <article class="card">
+                <h3>Coordonnées rédaction</h2>
                 <p>Citypulse</p>
                 <p>Rédaction locale — réponses sous 48h ouvrées.
                     Adresse : 12, rue des éditions, 89000 (exemple)
                     Horaires : lun-ven, 9h-12h / 14h-17h
                 </p>
             </article>
-            <article>
-                <h2>Avant d'envoyer</h2>
+            <article class="card">
+                <h3>Avant d'envoyer</h2>
                 <ul>
                     <li>Donnez une date et un lieu précis.</li>
                     <li>Ajoutez un contact si l'événement nécessite une confirmation.</li>
