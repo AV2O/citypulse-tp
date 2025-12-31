@@ -32,16 +32,16 @@
     </header>
     <main class="mainA">
         <div class="c1">
-            <h1>Agenda</h1>
-            <p>Les rendez-vous du territoire : culture, sport,
+            <h1 tabindex="1">Agenda</h1>
+            <p tabindex="2">Les rendez-vous du territoire : culture, sport,
                 ateliers et événements associatifs. Les filtres sont
                 présentés à titre visuel (TP sans JavaScript).
             </p>
         </div>
-        <form action="#" class="c2">
+        <form action="#" class="c2" tabindex="3">
             <div class="choix-periode">
                 <label for="periode">Période</label>
-                <select id="periode" name="periode" required>
+                <select id="periode" name="periode" required tabindex="4">
                     <option value="semaine">Cette semaine</option>
                     <option value="mois">Ce mois-ci</option>
                     <option value="date">Choisir une date</option>
@@ -49,7 +49,7 @@
             </div>
             <div class="choix-evenement">
                 <label for="evenement">Type d'évènement</label>
-                <select id="evenement" name="evenement" required>
+                <select id="evenement" name="evenement" required tabindex="5">
                     <option>Tous</option>
                     <option>Concert</option>
                     <option>Marché</option>
@@ -60,66 +60,66 @@
             </div>
             <p>Filtre non fonctionnels (présentation uniquement)</p>
         </form>
-        <article class="carta c3">
-            <a> Concert</a>
+        <article class="carta c3" tabindex="6">
+            <a>Concert</a>
             <h2>Événement : Concert</h2>
             <p>Sam. 27 déc. - 18h30 • Salle des fêtes</p>
             <p>Soirée acoustique et chants de saison, entrée libre.</p>
         </article>
-        <article class="carta c4">
-            <a> Marché</a>
+        <article class="carta c4" tabindex="7">
+            <a>Marché</a>
             <h2>Événement : Marché</h2>
             <p>Dim. 28 déc. - 10h00 • Place centrale</p>
             <p>Producteurs, idées de paniers, dégustations locales.</p>
         </article>
-        <article class="carta c5">
-            <a> Atelier</a>
+        <article class="carta c5" tabindex="8">
+            <a>Atelier</a>
             <h2>Événement : Atelier</h2>
             <p>Lun. 29 déc. - 14h00 • Médiathèque</p>
             <p>Initiation à la lecture à voix haute, tout public.</p>
         </article>
-        <article class="carta c6">
-            <a> Sport</a>
+        <article class="carta c6" tabindex="9">
+            <a>Sport</a>
             <h2>Événement : Sport</h2>
             <p>Mar. 30 déc. - 09h30 • Gymnase</p>
             <p>Séance douce : mobilité, posture, respiration.</p>
         </article>
-        <article class="carta c7">
-            <a> Exposition</a>
+        <article class="carta c7" tabindex="10">
+            <a>Exposition</a>
             <h2>Événement : Exposition</h2>
             <p>Sam. 3 janv. - 15h00 • Espace culturel</p>
             <p>Visite commentée : artistes locaux, formats courts.</p>
         </article>
-        <article class="carta c8">
-            <a> Culture</a>
+        <article class="carta c8" tabindex="11">
+            <a>Culture</a>
             <h2>Événement : Culture</h2>
             <p>Dim. 4 janv. - 11h00 • Centre-ville</p>
             <p>Balade patrimoniale : découverte et anecdotes.</p>
         </article>
-        <article class="carta c9">
-            <a> Atelier</a>
+        <article class="carta c9" tabindex="12">
+            <a>Atelier</a>
             <h2>Événement : Atelier</h2>
             <p>Lun. 5 janv. - 18h00 • Maison des associations</p>
             <p>Atelier citoyen : idées pour la prochaine édition.</p>
         </article>
-        <article class="carta c10">
-            <a> Culture</a>
+        <article class="carta c10" tabindex="13">
+            <a>Culture</a>
             <h2>Événement : Culture</h2>
             <p>Mar. 6 janv. - 20h00 • Cinéma</p>
             <p>Projection-débats : film documentaire, échanges.</p>
         </article>
         <nav class="time-nav" aria-label="Navigation temporelle">
-            <button class="time-btn" aria-label="Semaine précédente">
+            <button class="time-btn" tabindex="14" aria-label="Semaine précédente">
                 Préc.
             </button>
-            <button class="time-btn active" aria-label="Semaine actuelle" aria-pressed="true">
+            <button class="time-btn active" tabindex="15" aria-label="Semaine actuelle" aria-pressed="true">
                 Semaine
             </button>
-            <button class="time-btn" aria-label="Semaine suivante">
+            <button class="time-btn" tabindex="16" aria-label="Semaine suivante">
                 Suiv.
             </button>
         </nav>
-        <aside class="sidebar">
+        <aside class="sidebar" tabindex="17">
             <section>
                 <h3>Conseil pratique</h3>
                 <p>Pensez à vérifier les horaires sur place en
@@ -130,32 +130,32 @@
                 <h3>Proposer un événement</h3>
                 <p>Association, commerçant, initiative locale :
                     envoyez les informations à la rédaction.</p>
-                <a class="btn-primary" href="contact.html">Proposer un événement</a>
+                <a class="btn-primary" href="contact.html" tabindex="18">Proposer un événement</a>
             </section>
         </aside>
     </main>
-    <footer>
+    <footer tabindex="19">
         <div class="tab">
             <div>
                 <h4>CityPulse</h4>
-                <p>Le mini local qui met en avant les infos utiles, les initiatives et l'agenda du territoire.</p>
+                <p>Le mini local qui met en avant les infos utiles...</p>
             </div>
-            <nav>
+            <nav tabindex="20">
                 <h4>Rubrique</h4>
-                <a href="index.html">Accueil</a>
-                <a href="articles.html">Articles</a>
-                <a href="agenda.html">Agenda</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" tabindex="21">Accueil</a>
+                <a href="articles.html" tabindex="22">Articles</a>
+                <a href="agenda.html" tabindex="23">Agenda</a>
+                <a href="contact.html" tabindex="24">Contact</a>
             </nav>
-            <nav>
+            <nav tabindex="25">
                 <h4>Rédaction</h4>
-                <a href="contact.html">Porposer une info</a>
-                <a href="contact.html">Signaler une erreur</a>
-                <a href="#">Charte de publication</a>
+                <a href="contact.html" tabindex="26">Proposer une info</a>
+                <a href="contact.html" tabindex="27">Signaler une erreur</a>
+                <a href="#" tabindex="28">Charte de publication</a>
             </nav>
         </div>
         <span></span>
-        <p>© 2025 CityPulse — UI statique (TP HTML/CSS).</p>
+        <p tabindex="29">© 2025 CityPulse — UI statique (TP HTML/CSS).</p>
     </footer>
 </body>
 

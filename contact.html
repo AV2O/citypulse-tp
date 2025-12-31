@@ -32,24 +32,24 @@
     </header>
     <main class="mainC">
         <section class="c1">
-            <h1>Contatct / Proposer une info</h1>
-            <p>Vous avez une information locale, un événement
+            <h1 tabindex="1">Contatct / Proposer une info</h1>
+            <p tabindex="2">Vous avez une information locale, un événement
                 ou une correction à signaler ? Envoyez-nous un
                 message. Les champs marqués "obligatoire"
                 doivent être renseignés.
             </p>
         </section>
-        <form class="c2">
+        <form class="c2" tabindex="3">
             <label for="name">Nom (facultatif)</label>
-            <input name="name" id="H" type="text" placeholder="Entrer votre Nom">
+            <input name="name" id="H" type="text" placeholder="Entrer votre Nom" tabindex="4">
             <legend>Indiquez le nom que nous pouvons citer si vous le souhaitez</legend>
 
             <label for="mail">Email (obligatoire)</label>
-            <input name="mail" id="mail" type="text" placeholder="xyz@mail.fr" required>
+            <input name="mail" id="mail" type="text" placeholder="xyz@mail.fr" required tabindex="5">
             <legend>Nous l'utilisons uniquement pour vous répondre</legend>
 
             <label for="choix-message">Type de message (obligatoire)</label>
-            <select name="choix-message" id="choix-message" placeholder="Choisir...">
+            <select name="choix-message" id="choix-message" placeholder="Choisir..." tabindex="6">
                 <option value="proposer un article">Proposer un article</option>
                 <option value="propser un evenement">Proposer un événement</option>
                 <option value="signaler">Signaler une erreur</option>
@@ -58,28 +58,27 @@
 
             <label for="textarea">Message (obligatoire)</label>
             <textarea name="textarea" id="textarea" placeholder="Décrivez l'information : qui? quoi? quand? comment?"
-                required></textarea>
+                required tabindex="7"></textarea>
             <legend>Plus c'est précis, plus c'est simple à verifier et à publier</legend>
 
             <div class="form-checkbox">
-
-                <input type="checkbox" name="collecte" id="collecte" required>
+                <input type="checkbox" name="collecte" id="collecte" required tabindex="8">
                 <label for="collecte">J'accepte la collecte de mes données personnelles afin d'être recontacté au sujet
                     de ce message</label>
             </div>
 
-            <button class="btn-primary" type="submit">Envoyer</button>
+            <button class="btn-primary" type="submit" tabindex="9">Envoyer</button>
             <legend>Envoi non fonctionnel (TP sans back-end)</legend>
         </form>
-        <aside class="sidebar">
-            <section class="card1">
+        <aside class="sidebar" tabindex="10">
+            <section class="card1" tabindex="11">
                 <h3>Coordonnées rédaction</h2>
                     <h4>CityPulse</h4>
                     <p>Rédaction locale — réponses sous 48h ouvrées.</p>
                     <p>Adresse : 12, rue des éditions, 89000 (exemple)</p>
                     <p>Horaires : lun-ven, 9h-12h / 14h-17h</p>
             </section>
-            <section class="card1">
+            <section class="card1" tabindex="12">
                 <h3>Avant d'envoyer</h2>
                     <ul>
                         <li>Donnez une date et un lieu précis.</li>
@@ -89,28 +88,29 @@
             </section>
         </aside>
     </main>
-    <footer>
+
+    <footer tabindex="13">
         <div class="tab">
             <div>
                 <h4>CityPulse</h4>
-                <p>Le mini local qui met en avant les infos utiles, les initiatives et l'agenda du territoire.</p>
+                <p>Le mini local qui met en avant les infos utiles...</p>
             </div>
-            <nav>
+            <nav tabindex="14">
                 <h4>Rubrique</h4>
-                <a href="index.html">Accueil</a>
-                <a href="articles.html">Articles</a>
-                <a href="agenda.html">Agenda</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" tabindex="15">Accueil</a>
+                <a href="articles.html" tabindex="16">Articles</a>
+                <a href="agenda.html" tabindex="17">Agenda</a>
+                <a href="contact.html" tabindex="18">Contact</a>
             </nav>
-            <nav>
+            <nav tabindex="19">
                 <h4>Rédaction</h4>
-                <a href="contact.html">Porposer une info</a>
-                <a href="contact.html">Signaler une erreur</a>
-                <a href="#">Charte de publication</a>
+                <a href="contact.html" tabindex="20">Proposer une info</a>
+                <a href="contact.html" tabindex="21">Signaler une erreur</a>
+                <a href="#" tabindex="22">Charte de publication</a>
             </nav>
         </div>
         <span></span>
-        <p>© 2025 CityPulse — UI statique (TP HTML/CSS).</p>
+        <p tabindex="23">© 2025 CityPulse — UI statique (TP HTML/CSS).</p>
     </footer>
 
 </body>
