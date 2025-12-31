@@ -190,13 +190,14 @@ h1 {
     gap: 2rem;
 }
 
-h2, h3{
+h2,
+h3 {
     font-size: 2rem;
     font-weight: 900;
 }
 
 p {
-    padding: 0.3rem;
+    padding: 1rem;
 }
 
 
@@ -217,6 +218,17 @@ p {
     width: 100%;
 }
 
+.carta {
+    width: 100%;
+
+    h2,
+    p {
+        padding: 0 1rem;
+    }
+
+}
+
+
 .carta h3 {
     padding: 1rem;
     font-size: 1.5rem;
@@ -225,7 +237,6 @@ p {
 
 .carta a {
     background-color: #E5EFFF;
-    margin: 1rem 0 ;
     border-radius: 20px;
     width: 60px;
     padding: 0 0.3rem;
@@ -233,6 +244,7 @@ p {
     font-weight: 500;
     font-size: 1.2rem;
     border: 1px solid #C6CDD7;
+    margin: 1rem 0 0 1rem;
 }
 
 
@@ -393,7 +405,8 @@ form option {
     color: gray;
 }
 
-.time-nav, .btn-nav  {
+.time-nav,
+.btn-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -467,10 +480,9 @@ form textarea {
 }
 
 .card2 {
-    border-radius: 2px solid grey;
+    border: 2px solid #C6CDD7;
     background-color: white;
     border-radius: 12px;
-    margin: 2rem 0;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -488,7 +500,11 @@ form textarea {
 
     ul {
         padding: 1.5rem;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+
+        li {
+            padding: 0.3rem 1rem;
+        }
 
         span {
             font-weight: bold;
@@ -500,11 +516,13 @@ form textarea {
         border-radius: 12px;
         box-shadow: -5px 0 0 0 rgb(28, 148, 188);
         padding: 1rem;
+        margin-left: 1rem;
     }
 }
 
 .card2 p {
     color: black;
+    font-size: 1.5rem;
 
     button {
         border-radius: 20px;
@@ -515,12 +533,170 @@ form textarea {
     }
 }
 
+.mainD {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    img {
+        width: 100%;
+    }
+}
+
 /*  ======== RESPONSIVE ======== */
 
 
 
 /* Sur tablette (à partir de 768px), 1ère media query */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    /* ===== INDEX ===== */
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 60%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .btn {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            width: 40%;
+            text-align: center;
+        }
+
+        .btn-secondary {
+            width: 60%;
+            text-align: center;
+        }
+    }
+
+    .sidebar section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .title {
+        width: 738px;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 364px 364px;
+        gap: 1rem;
+
+        .carta {
+            width: 364px
+        }
+
+        .title {
+            grid-column: 1/3;
+        }
+
+        .last {
+            grid-column: 1/3;
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .sidebar {
+            grid-column: 1/3;
+        }
+    }
+
+    /* ====== AGENDA/ARTICLES ====== */
+
+    .mainA,
+    .mainB {
+        display: grid;
+        grid-template-columns: 364px 364px;
+        gap: 1rem;
+
+        .c1,
+        .c2,
+        .sidebar {
+            grid-column: 1/3;
+        }
+
+        .time-nav {
+            grid-column: 1/3;
+            grid-row: 8/9;
+        }
+
+        .btn-nav {
+            grid-column: 1/3;
+            grid-row: 8/9;
+        }
+    }
+
+    /* ====== CONTACT ====== */
+
+    .mainC {
+        gap: 1rem;
+    }
+
+    form,
+    .card1,
+    .card2,
+    .sidebar {
+        width: 738px;
+
+        legend {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .card,
+    .carta {
+        background-color: var(--blanc);
+        border-radius: 1.5rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border: 2px solid rgb(237, 237, 237);
+    }
+
+    .mainD {
+
+        img {
+            width: 100%;
+        }
+
+        .card2 {
+            .card1{
+                width: 718px;
+            }
+        }
+
+    }
+
+
+
+}
 
 
 
@@ -558,7 +734,7 @@ form textarea {
             height: 100%;
         }
 
-    
+
     }
 
 
@@ -721,11 +897,11 @@ form textarea {
 
     }
 
-    /* ====== ARTICLE ====== */
+    /* ====== ARTICLEs ====== */
 
     .mainB {
         display: grid;
-        grid-template-columns: repeat(3,215px) 250px;
+        grid-template-columns: repeat(3, 215px) 250px;
         align-items: center;
         gap: 1rem;
 
@@ -739,7 +915,7 @@ form textarea {
             grid-row: 2/3;
         }
 
-         .c3 {
+        .c3 {
             grid-column: 1/2;
             grid-row: 3/4;
         }
@@ -755,7 +931,7 @@ form textarea {
         }
 
         .c6 {
-           grid-column: 1/2;
+            grid-column: 1/2;
             grid-row: 4/5;
         }
 
@@ -777,7 +953,7 @@ form textarea {
         .c10 {
             grid-column: 2/3;
             grid-row: 5/6;
-            
+
         }
 
         .c11 {
@@ -802,20 +978,7 @@ form textarea {
             padding: 1rem;
         }
 
-        .carta {
-            width: 100%;
 
-            h2, p {
-                padding: 1rem;
-            }
-
-            a {
-                margin:  1rem 0 0 1rem;
-            }
-
-
-    
-        }
     }
 
     /* ===== CONTACT ===== */
@@ -828,7 +991,7 @@ form textarea {
         .c1 {
             grid-column: 1/3;
             grid-row: 1/2;
-    
+
         }
 
         .c2 {
@@ -847,7 +1010,59 @@ form textarea {
 
     }
 
+    /*  ====== ARTICLE ====== */
 
+    .mainD {
+        display: grid;
+        grid-template-columns: 600px 250px;
+        gap: 1rem;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            margin: 0;
+        
+        }
+
+        .c1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+
+        }
+
+        .c2 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            height: 100%;
+        }
+
+        /* .c3 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        } */
+
+        .c3, .c4, .c5 {
+            grid-column: 1/2;
+            width: 600px;
+        }
+
+
+        .sidebar {
+            grid-column: 2/3;
+            grid-row: 1/3;
+            margin: 0;
+            height: 100%;
+            width: 250px;
+        }
+
+        .card2 {
+            .card1{
+                width: 580px;
+            }
+        }
+
+    }
 
     footer p:last-child {
         align-self: center;
