@@ -9,7 +9,7 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="logo">
             <a href="/" class="brand" aria-label="Accueil CityPulse">
                 <img src="img/logo.svg" alt="logo CityPulse">
@@ -30,13 +30,15 @@
             </nav>
         </div>
     </header>
-    <main>
-        <h1>Agenda</h1>
+    <main class="mainA">
+        <div class="c1">
+            <h1>Agenda</h1>
         <p>Les rendez-vous du territoire : culture, sport,
             ateliers et événements associatifs. Les filtres sont
             présentés à titre visuel (TP sans JavaScript).
         </p>
-        <form action="#">
+        </div>
+        <form action="#" class="c2">
             <div class="choix-periode">
                 <label for="periode">Période</label>
                 <select id="periode" name="periode" required>
@@ -58,69 +60,65 @@
             </div>
             <p>Filtre non fonctionnels (présentation uniquement)</p>
         </form>
-        <section>
-            <div class="cards">
-                <article class="card">
-                    <a> Concert</a>
-                    <h2>Événement : Concert</h2>
-                    <p>Sam. 27 déc. - 18h30 • Salle des fêtes</p>
-                    <p>Soirée acoustique et chants de saison, entrée libre.</p>
-                </article>
-                <article class="card">
-                    <a> Marché</a>
-                    <h2>Événement : Marché</h2>
-                    <p>Dim. 28 déc. - 10h00 • Place centrale</p>
-                    <p>Producteurs, idées de paniers, dégustations locales.</p>
-                </article>
-                <article class="card">
-                    <a> Atelier</a>
-                    <h2>Événement : Atelier</h2>
-                    <p>Lun. 29 déc. - 14h00 • Médiathèque</p>
-                    <p>Initiation à la lecture à voix haute, tout public.</p>
-                </article>
-                <article class="card">
-                    <a> Sport</a>
-                    <h2>Événement : Sport</h2>
-                    <p>Mar. 30 déc. - 09h30 • Gymnase</p>
-                    <p>Séance douce : mobilité, posture, respiration.</p>
-                </article>
-                <article class="card">
-                    <a> Exposition</a>
-                    <h2>Événement : Exposition</h2>
-                    <p>Sam. 3 janv. - 15h00 • Espace culturel</p>
-                    <p>Visite commentée : artistes locaux, formats courts.</p>
-                </article>
-                <article class="card">
-                    <a> Culture</a>
-                    <h2>Événement : Culture</h2>
-                    <p>Dim. 4 janv. - 11h00 • Centre-ville</p>
-                    <p>Balade patrimoniale : découverte et anecdotes.</p>
-                </article>
-                <article class="card">
-                    <a> Atelier</a>
-                    <h2>Événement : Atelier</h2>
-                    <p>Lun. 5 janv. - 18h00 • Maison des associations</p>
-                    <p>Atelier citoyen : idées pour la prochaine édition.</p>
-                </article>
-                <article class="card">
-                    <a> Culture</a>
-                    <h2>Événement : Culture</h2>
-                    <p>Mar. 6 janv. - 20h00 • Cinéma</p>
-                    <p>Projection-débats : film documentaire, échanges.</p>
-                </article>
-            </div>
-            <nav class="time-nav" aria-label="Navigation temporelle">
-                <button class="time-btn" aria-label="Semaine précédente">
-                    Préc.
-                </button>
-                <button class="time-btn active" aria-label="Semaine actuelle" aria-pressed="true">
-                    Semaine
-                </button>
-                <button class="time-btn" aria-label="Semaine suivante">
-                    Suiv.
-                </button>
-            </nav>
-        </section>
+        <article class="carta c3">
+            <a> Concert</a>
+            <h2>Événement : Concert</h2>
+            <p>Sam. 27 déc. - 18h30 • Salle des fêtes</p>
+            <p>Soirée acoustique et chants de saison, entrée libre.</p>
+        </article>
+        <article class="carta c4">
+            <a> Marché</a>
+            <h2>Événement : Marché</h2>
+            <p>Dim. 28 déc. - 10h00 • Place centrale</p>
+            <p>Producteurs, idées de paniers, dégustations locales.</p>
+        </article>
+        <article class="carta c5">
+            <a> Atelier</a>
+            <h2>Événement : Atelier</h2>
+            <p>Lun. 29 déc. - 14h00 • Médiathèque</p>
+            <p>Initiation à la lecture à voix haute, tout public.</p>
+        </article>
+        <article class="carta c6">
+            <a> Sport</a>
+            <h2>Événement : Sport</h2>
+            <p>Mar. 30 déc. - 09h30 • Gymnase</p>
+            <p>Séance douce : mobilité, posture, respiration.</p>
+        </article>
+        <article class="carta c7">
+            <a> Exposition</a>
+            <h2>Événement : Exposition</h2>
+            <p>Sam. 3 janv. - 15h00 • Espace culturel</p>
+            <p>Visite commentée : artistes locaux, formats courts.</p>
+        </article>
+        <article class="carta c8">
+            <a> Culture</a>
+            <h2>Événement : Culture</h2>
+            <p>Dim. 4 janv. - 11h00 • Centre-ville</p>
+            <p>Balade patrimoniale : découverte et anecdotes.</p>
+        </article>
+        <article class="carta c9">
+            <a> Atelier</a>
+            <h2>Événement : Atelier</h2>
+            <p>Lun. 5 janv. - 18h00 • Maison des associations</p>
+            <p>Atelier citoyen : idées pour la prochaine édition.</p>
+        </article>
+        <article class="carta c10">
+            <a> Culture</a>
+            <h2>Événement : Culture</h2>
+            <p>Mar. 6 janv. - 20h00 • Cinéma</p>
+            <p>Projection-débats : film documentaire, échanges.</p>
+        </article>
+        <nav class="time-nav" aria-label="Navigation temporelle">
+            <button class="time-btn" aria-label="Semaine précédente">
+                Préc.
+            </button>
+            <button class="time-btn active" aria-label="Semaine actuelle" aria-pressed="true">
+                Semaine
+            </button>
+            <button class="time-btn" aria-label="Semaine suivante">
+                Suiv.
+            </button>
+        </nav>
         <aside class="sidebar">
             <section>
                 <h3>Conseil pratique</h3>
@@ -132,7 +130,7 @@
                 <h3>Proposer un événement</h3>
                 <p>Association, commerçant, initiative locale :
                     envoyez les informations à la rédaction.</p>
-                <a class="btn-primary"  href="contact.html">Proposer un événement</a>
+                <a class="btn-primary" href="contact.html">Proposer un événement</a>
             </section>
         </aside>
     </main>
